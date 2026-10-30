@@ -1,50 +1,33 @@
-# Welcome to your Expo app 👋
+# Mi App · Taller de Expo para NASA Space Apps Challenge 2025
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+App base en **Expo + React Native** que usé para entrenar a los equipos de estudiantes de la PUCE Sede Esmeraldas (PUCESE) antes del **NASA International Space Apps Challenge 2025**. El objetivo del taller: pasar de cero a una app móvil instalable en una tarde, para que en el hackathon el tiempo se dedique al reto y a los datos de la NASA, no a configurar el proyecto.
 
-## Get started
+🎥 [Sesión de entrenamiento](https://youtu.be/JQhSS41FXxk) · 📦 [Descargar el APK](https://github.com/kevingo710/example-expo/releases/latest) · 🌐 Taller web: [example-pucese-one](https://github.com/kevingo710/example-pucese-one)
 
-1. Install dependencies
+## Qué se ve en el taller
 
-   ```bash
-   npm install
-   ```
+- Crear el proyecto con `create-expo-app` y entender la estructura de **Expo Router** (rutas por archivos en `app/`)
+- Navegación por pestañas (`app/(tabs)`) y una pantalla modal
+- Componentes con tema claro/oscuro (`components/themed-*`) y scroll con parallax
+- Probar en el móvil con **Expo Go** y generar un **APK con EAS Build** para la demo final
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Ejecutarlo
 
 ```bash
-npm run reset-project
+npm install
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Escanea el QR con Expo Go (Android/iOS) o abre un emulador. Para generar el APK:
 
-## Learn more
+```bash
+npx eas build -p android --profile preview
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+## Stack
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Expo SDK 54 · React Native (New Architecture) · Expo Router 6 · TypeScript · EAS Build
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Preparado por [Kevin Gracia Orejuela](https://github.com/kevingo710), mentor de NASA Space Apps Challenge.
